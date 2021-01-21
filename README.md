@@ -1,2 +1,2 @@
 # just-carlod.github.io
-My poor and ugly website
+This is my poor and ugly website, go away from this place 🤪

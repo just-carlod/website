@@ -1,0 +1,52 @@
+body {
+font-size:x-large;
+position: static;
+display: block;
+background-color: #1a1b1e;
+width: 100vw;
+height: 100vh;
+margin: 0;
+padding: 0;
+color: white;
+font-family: 'Lato', sans-serif;
+}
+.area {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f2020;
+  box-shadow: 0px 0px 2px mediumaquamarine;
+}
+.area > p {
+  padding-left: 10vw;
+}
+.area > ul {
+  position: absolute;
+  bottom: 0px;
+  padding:0;
+  text-align: center;
+  color: mediumaquamarine;
+  font-size: large;
+}
+.area > ul > li:hover {
+  background: white;
+}
+.area > ul > li {
+  padding: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+#avatar {
+  position: absolute;
+  top: 3vh;
+  left: 4vh;
+  width:35vh;
+  height:35vh;
+}
+.aboutme {
+background-color: mediumaquamarine;
+min-height: 30vh;
+}
+a:visited, a:link {
+color:mediumaquamarine;
+text-decoration: none;
+}

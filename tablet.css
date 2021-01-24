@@ -2,51 +2,47 @@ body {
 font-size:x-large;
 position: static;
 display: block;
-background-color: #1a1b1e;
+background-color: black;
 width: 100vw;
-height: 100vh;
+height: calc(100vh - 3px);
 margin: 0;
 padding: 0;
 color: white;
 font-family: 'Lato', sans-serif;
 }
 .area {
-  width: 100vw;
-  height: 100vh;
+  margin: 3px;
+  height: calc(100% - 6px);
   background-color: #1f2020;
-  box-shadow: 0px 0px 2px mediumaquamarine;
 }
 .area > p {
-  padding: 7vw;
-  padding-top: 6vh;
+  padding-left: 30vh;
 }
-.socials { display: none; }
-
 .area > ul {
   position: absolute;
-  min-width: 90vw;
-  bottom: 15px;
+  min-width: 80vw;
+  bottom: 20px;
   left: 50%;
   transform: translate(-50%, 30%);
-  padding: 0;
+  /*border-bottom: 2px solid white;*/
+  padding:0;
   text-align: center;
   color: mediumaquamarine;
-  font-size: x-large;
+  font-size: large;
 }
 .area > ul > li:hover {
-  background: white;
   border-radius: 5px;
+  background: white;
 }
 .area > ul > li {
-  padding: 5px 8px 5px 8px;
-
+  padding: 10px;
+  padding-bottom: 6px;
   display: inline-block;
 }
 #avatar {
-  position: absolute;
+  position: fixed;
+  left: 3vw;
   top: 3vh;
-  left: 50%;
-  transform: translate(-52.5%, 0%);
   width:35vh;
   height:35vh;
 }

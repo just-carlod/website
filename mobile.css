@@ -24,14 +24,14 @@ font-family: 'Lato', sans-serif;
 
 .area > ul {
   position: absolute;
-  min-width: 85vw;
-  bottom: 0px;
+  min-width: 90vw;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, 30%);
   padding: 0;
   text-align: center;
   color: mediumaquamarine;
-  font-size: medium;
+  font-size: x-large;
 }
 .area > ul > li:hover {
   background: white;

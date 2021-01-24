@@ -10,20 +10,23 @@ padding: 0;
 color: white;
 font-family: 'Lato', sans-serif;
 }
+#hamburger {
+  display: none;
+}
 .area {
   width: 80vw - 10px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1f2020;
   margin-left: 10vw;
   margin-right: 10vw;
   box-shadow: 0px 0px 2px mediumaquamarine;
 }
 .area > p {
-  padding-left: 20vw;
+  padding-left: 40vh;
 }
 .area > ul {
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, 30%);
   border-bottom: 2px solid white;
@@ -37,13 +40,13 @@ font-family: 'Lato', sans-serif;
 }
 .area > ul > li {
   padding: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   display: inline-block;
 }
 #avatar {
-  position: absolute;
+  position: fixed;
+  left: 12vw;
   top: 3vh;
-  left: 24vh;
   width:35vh;
   height:35vh;
 }

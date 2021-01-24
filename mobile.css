@@ -24,11 +24,11 @@ font-family: 'Lato', sans-serif;
 
 .area > ul {
   position: absolute;
-  min-width: 80vw;
+  min-width: 85vw;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 30%);
-  padding:0;
+  padding: 0;
   text-align: center;
   color: mediumaquamarine;
   font-size: medium;

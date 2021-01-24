@@ -10,9 +10,6 @@ padding: 0;
 color: white;
 font-family: 'Lato', sans-serif;
 }
-#hamburger {
-  display: none;
-}
 .area {
   width: 80vw - 10px;
   min-height: 100vh;

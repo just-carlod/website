@@ -20,8 +20,11 @@ font-family: 'Lato', sans-serif;
   padding: 7vw;
   padding-top: 6vh;
 }
+.socials { display: none; }
+
 .area > ul {
   position: absolute;
+  min-width: 80vw;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 30%);
@@ -30,12 +33,13 @@ font-family: 'Lato', sans-serif;
   color: mediumaquamarine;
   font-size: medium;
 }
-.socials { display: none; }
 .area > ul > li:hover {
   background: white;
+  border-radius: 5px;
 }
 .area > ul > li {
-  padding: 8px;
+  padding: 5px 8px 5px 8px;
+
   display: inline-block;
 }
 #avatar {

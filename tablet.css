@@ -20,7 +20,7 @@ font-family: 'Lato', sans-serif;
 }
 .area > ul {
   position: absolute;
-  min-width: 80vw;
+  min-width: 90vw;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, 30%);

@@ -23,7 +23,7 @@ font-family: 'Lato', sans-serif;
 }
 .area > ul {
   position: absolute;
-  min-width: 70vw;
+  min-width: 75vw;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 30%);
@@ -31,7 +31,8 @@ font-family: 'Lato', sans-serif;
   padding:0;
   text-align: center;
   color: mediumaquamarine;
-  font-size: large;
+  font-size: x-large;
+  font-size-adjust: 0.4;
 }
 .area > ul > li:hover {
   border-radius: 5px;

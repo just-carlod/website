@@ -5,11 +5,18 @@ height: 100%;
 margin: 0;
 padding: 0;
 }
+
+#avatar {
+  padding-top: 10px;
+  max-height: 90vw;
+  max-width: 90vw;
+  padding-left: 5vw;
+}
+
 .area {
   width: 100vw;
   max-width: 1280px;
-  height: 2000px;
-  max-height:100vh;
+  height:100vh;
   background-color: #1f2020;
 /*#102f2f;*/
   margin: auto;
@@ -19,10 +26,6 @@ padding: 0;
   font-size:x-large;
   color: white;
 }
-.area > p {
-  padding-left: 40vh;
-}
-
 .aboutme {
 background-color: mediumaquamarine;
 min-height: 30vh;
@@ -48,9 +51,13 @@ text-decoration: none;
     box-sizing: border-box;
     display: block;
     width: 100%;
+    padding-left: 10px;
     border-top: 1px solid #333;
   }
-
+p {
+  margin: 0;
+  padding: 6px;
+}
   /* Toggle Show/Hide Menu */
   #hamitems { display: none; }
   #hamburger:checked ~ #hamitems { display: block; }

@@ -7,6 +7,12 @@ margin: 0;
 padding: 0;
 display: block;
 }
+#avatar {
+  padding-top: 10px;
+  max-height: 90vw;
+  max-width: 90vw;
+  padding-left: 5vw;
+}
 .area {
   background-color: white;
   font-family: 'Lato', sans-serif;
@@ -14,8 +20,7 @@ display: block;
   color: black;
   width: 100vw;
   max-width: 1280px;
-  height: 2000px;
-  max-height:100vh;
+  height:100vh;
 /*#102f2f;*/
   margin: auto;
   margin-top: 0vw;
@@ -23,9 +28,6 @@ display: block;
   font-family: 'Lato', sans-serif;
   font-size:x-large;
 
-}
-.area > p {
-  padding-left: 40vh;
 }
 .aboutme {
 background-color: mediumaquamarine;
@@ -53,8 +55,11 @@ text-decoration: none;
     display: block;
     width: 100%;
     border-top: 1px solid #ccc;
+    padding-left: 10px;
   }
-
+p {
+  padding: 6px;
+}
   /* Toggle Show/Hide Menu */
   #hamitems { display: none; }
   #hamburger:checked ~ #hamitems { display: block; }

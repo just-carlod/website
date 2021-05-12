@@ -1,0 +1,60 @@
+body {
+position: static;
+background-color: #d2cccf;
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+display: block;
+}
+.area {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size:x-large;
+  color: black;
+  width: 100vw;
+  max-width: 1280px;
+  height: 2000px;
+  max-height:100vh;
+/*#102f2f;*/
+  margin: auto;
+  margin-top: 0vw;
+  box-shadow: 0px 0px 2px mediumaquamarine;
+  font-family: 'Lato', sans-serif;
+  font-size:x-large;
+
+}
+.area > p {
+  padding-left: 40vh;
+}
+.aboutme {
+background-color: mediumaquamarine;
+min-height: 30vh;
+}
+a:visited, a:link {
+color:mediumaquamarine;
+text-decoration: none;
+}
+#theme, #hamburger, #light {
+  display: none;
+}
+
+  #hamnav label {
+    display: inline-block;
+    color: mediumaquamarine;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamburger:checked ~ #hamitems { display: block; }

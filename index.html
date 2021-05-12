@@ -3,35 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="all and (max-aspect-ratio: 3/5)" href="mobile.css">
-  <link rel="stylesheet" media="all and (min-aspect-ratio: 3/5) and (max-aspect-ratio: 6/5)" href="tablet.css">
-  <link rel="stylesheet" media="all and (min-aspect-ratio: 6/5)" href="desktop.css">
+
+  <link id="load_light" rel="stylesheet" media="(prefers-color-scheme: light)" href="light.css"/>
+  <link id="load_dark" rel="stylesheet" media="(prefers-color-scheme: dark)" href="dark.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <title>Carlod's site</title>
 </head>
 <body>
-  <div class="area">
-    <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
-    <div class="aboutme">
-      <div class="descrp">
+<div class="area">
+  <navbar id="hamnav">
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+      <label style="float:right;" for="theme"><i class="fa fa-moon-o" id="dark" aria-hidden="true"></i><i class="fa fa-sun-o" id="light" aria-hidden="true"></i></label>
+      <script>
+        document.getElementById("dark").onclick = function () {
+          console.log("tak");
+          document.getElementById("load_light").href="dark.css";
+        };
+        document.getElementById("light").onclick = function () {
+          console.log("tak");
+          document.getElementById("load_dark").href="light.css";
+        };
+      </script>
+      <input type="checkbox" id="theme"/>
+      <div id="hamitems">
+        <a href="blog.html">Blog</a>
+        <a href="">Projects</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="">About Me</a>
       </div>
-    </div>
+  </navbar>
+  <div class="content">
+    <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
       <p>
-        Hello, this is my template website I'm gonna improve it one day and create my own blog
+        Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. I like watching football and searching internet for memes and other cool stuff in my free time.
       </p>
-    <ul>
-      <!--li>Navbar</li-->
-      <li><a href="https://github.com/just-carlod"><i class="fa fa-github" aria-hidden="true"></i><span class="socials"> Github</span></a></li>
-      <li><a href="https://gitlab.com/just-carlod"><i class="fa fa-gitlab" aria-hidden="true"></i><span class="socials"> Gitlab</span></a></li>
-      <li><a href="https://t.me/just_carlod"><i class="fa fa-telegram" aria-hidden="true"></i><span class="socials"> Telegram</span></a></li>
-      <li><a href=""><i class="fa fa-discord" aria-hidden="true"></i><span class="socials"> Discord</span></a></li>
-      <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i><span class="socials"> Mail</span></a></li>
-      <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i><span class="socials"> Blog</span></a></li>
-      <li><a href="https://twitter.com/justcarlod"><i class="fa fa-twitter" aria-hidden="true"></i><span class="socials"> Twitter</span></a></li>
-      <li><a href="https://yotube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i><span class="socials"> Youtube</span></a></li>
-    </ul>
   </div>
+</div>
 </body>
 </html>

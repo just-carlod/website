@@ -14,31 +14,32 @@
 <body>
 <div class="area">
   <navbar id="hamnav">
-      <label for="hamburger">&#9776;</label>
-      <input type="checkbox" id="hamburger"/>
-      <label style="float:right;" for="theme"><i class="fa fa-moon-o" id="dark" aria-hidden="true"></i><i class="fa fa-sun-o" id="light" aria-hidden="true"></i></label>
-      <script>
+        <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger"/>
+          <label style="float:right;" for="theme">
+            <i class="fa fa-moon-o" id="dark" aria-hidden="true"></i>
+            <i class="fa fa-sun-o" id="light" aria-hidden="true"></i>
+          </label>
+          <input type="checkbox" id="theme"/>
+      <div id="hamitems">
+        <a id="firstitem" href="blog.html">Blog</a>
+        <a href="">Projects</a>
+        <a href="contact.html">Contact Me</a>
+        <a id="lastitem" href="">About Me</a>
+      </div>
+  </navbar>
+  <script>
         document.getElementById("dark").onclick = function () {
-          console.log("tak");
           document.getElementById("load_light").href="dark.css";
         };
         document.getElementById("light").onclick = function () {
-          console.log("tak");
           document.getElementById("load_dark").href="light.css";
         };
-      </script>
-      <input type="checkbox" id="theme"/>
-      <div id="hamitems">
-        <a href="blog.html">Blog</a>
-        <a href="">Projects</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="">About Me</a>
-      </div>
-  </navbar>
+  </script>
   <div class="content">
     <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
       <p>
-        Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. I like watching football and searching internet for memes and other cool stuff in my free time.
+        Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. I like football and searching internet for memes and cool stuff in free time.
       </p>
   </div>
 </div>

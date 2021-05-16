@@ -34,10 +34,7 @@ text-decoration: none;
 #hamburger,#dark, #theme {
   display: none;
 }
-#hamnav {
-  display: block;
-}
-#hamnav label {
+#hamnav label, #hamnav a {
     display: inline-block;
     color: mediumaquamarine;
     font-style: normal;

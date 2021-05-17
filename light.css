@@ -45,7 +45,8 @@ text-decoration: none;
 #hamitems a {
     box-sizing: border-box;
     display: block;
-    padding: 6px;
+    padding: 5px;
+    font-size: 0.9em;
     width: 100%;
     border-bottom: 1px solid #ccc;
     padding-left: 10px;

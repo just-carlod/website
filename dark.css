@@ -28,7 +28,7 @@ padding: 0;
   color: white;
 }
 a:visited, a:link {
-color: mediumaquamarine;
+color: white;
 text-decoration: none;
 }
 #hamburger,#dark, #theme {
@@ -40,6 +40,8 @@ text-decoration: none;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
+}
+#contactme {
 }
 #firstitem {
     border-top: 1px solid #333;
@@ -57,5 +59,86 @@ p {
   margin: 0;
   padding: 8px;
 }
+#projectsdiv {
+  text-align: center;
+  padding-bottom: 20px;
+  min-width: 50%;
+  padding-left: 3%;
+  height: fit-content;
+  display: table;
+}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 60%;
+  padding-left: 20%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+
+/*#projectsdiv:after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+.aframe {
+  background: mediumaquamarine;
+  height: fit-content;
+  min-height: 40px;
+  border-radius: 10px;
+}
+.aframe:hover {
+  background: rgba(102,221,170,0.4);
+}
+
+.aframe > h4, h3, p, i, u {
+  padding-left: 10px;
+}
+[class*="col-"] {
+  float: left;
+  margin: 1%;
+}
+@media all and (max-aspect-ratio: 1) {
+.col-1 {width: 60%;}
+.col-2 {width: 75%;}
+.col-3 {width: 94%;}
+.col-4 {width: 94%;}
+.col-5 {width: 94%;}
+.col-6 {width: 94%;}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 80%;
+  padding-left: 10%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+
+}
+@media all and (min-aspect-ratio: 1) {
+.col-1 {width: 15%;}
+.col-2 {width: 30%;}
+.col-3 {width: 46%;}
+.col-4 {width: 60%;}
+.col-5 {width: 75%;}
+.col-6 {width: 94%;}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 60%;
+  padding-left: 20%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+
+}
+
   #hamitems { display: none; }
   #hamburger:checked ~ #hamitems { display: block; }

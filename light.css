@@ -6,12 +6,6 @@ height: fit-content;
 margin: 0;
 padding: 0;
 }
-#avatar {
-  padding-top: 15px;
-  max-height: 90vw;
-  max-width: 90vw;
-  padding-left: 5vw;
-}
 .area {
   background-color: white;
   font-family: 'Lato', sans-serif;
@@ -119,6 +113,13 @@ p {
   display: table;
   font-size:xx-large;
 }
+#avatar {
+  padding-top: 15px;
+  max-height: 90vw;
+  max-width: 90vw;
+  padding-left: 5vw;
+}
+
 }
 
 @media all and (min-aspect-ratio: 1) {
@@ -137,5 +138,11 @@ p {
   height: fit-content;
   display: table;
   font-size:xx-large;
+}
+#avatar {
+  padding-top: 15px;
+  max-height: 50vh;
+  max-width: 50vh;
+  padding-left: 6%;
 }
 }

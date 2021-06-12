@@ -81,8 +81,9 @@ p {
 .aframe {
   background: mediumaquamarine;
   height: fit-content;
-  min-height: 40px;
+  min-height: 37px;
   border-radius: 10px;
+  padding: 3px;
 }
 .aframe:hover {
   background: rgba(102,221,170,0.4);
@@ -141,7 +142,7 @@ p {
   padding-top: 15px;
   max-height: 50vh;
   max-width: 50vh;
-  padding-left: 6%;
+  padding-left: 10vh;
 }
 }
 

@@ -6,6 +6,14 @@ height: fit-content;
 margin: 0;
 padding: 0;
 }
+#avatar {
+  padding-top: 15px;
+  max-width: 90vw;
+  max-height: 90vw;
+  width: 50vh;
+  height: 50vh;
+  padding-left: 5vw;
+}
 .area {
   background-color: white;
   font-family: 'Lato', sans-serif;
@@ -72,13 +80,6 @@ p {
   display: table;
   font-size:xx-large;
 }
-
-/*#projectsdiv:after {
-+  content: "";
-+  clear: both;
-+  display: table;
-+}*/
-
 .aframe {
   background: mediumaquamarine;
   height: fit-content;
@@ -97,7 +98,7 @@ p {
   float: left;
   margin: 1%;
 }
-@media all and (max-aspect-ratio: 1) {
+@media all and (max-aspect-ratio: 1.1) {
 .col-1 {width: 60%;}
 .col-2 {width: 75%;}
 .col-3 {width: 94%;}
@@ -114,15 +115,9 @@ p {
   display: table;
   font-size:xx-large;
 }
-#avatar {
-  padding-top: 15px;
-  max-height: 90vw;
-  max-width: 90vw;
-  padding-left: 5vw;
-}
 }
 
-@media all and (min-aspect-ratio: 1) {
+@media all and (min-aspect-ratio: 1.1) {
 .col-1 {width: 15%;}
 .col-2 {width: 30%;}
 .col-3 {width: 46%;}
@@ -138,11 +133,5 @@ p {
   height: fit-content;
   display: table;
   font-size:xx-large;
-}
-#avatar {
-  padding-top: 15px;
-  max-height: 50vh;
-  max-width: 50vh;
-  padding-left: 10vw;
 }
 }

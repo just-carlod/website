@@ -6,14 +6,20 @@ height: fit-content;
 margin: 0;
 padding: 0;
 }
-
+#avatar {
+  padding-top: 15px;
+  max-height: 90vw;
+  max-width: 90vw;
+  width: 50vh;
+  height: 50vh;
+  padding-left: 5vw;
+}
 .area {
   width: 100vw;
   max-width: 1280px;
   min-height: 100vh;
   height: fit-content;
   background-color: #1f2020;
-/*#102f2f;*/
   margin: auto;
   margin-top: 0vw;
   box-shadow: 0px 0px 2px mediumaquamarine;
@@ -35,8 +41,6 @@ text-decoration: none;
     font-size: 1.2em;
     padding: 10px;
 }
-#contactme {
-}
 #firstitem {
     border-top: 1px solid #333;
 }
@@ -48,18 +52,10 @@ text-decoration: none;
     font-size: 0.9em;
     padding-left: 10px;
     border-bottom: 1px solid #333;
-  }
+}
 p {
   margin: 0;
   padding: 8px;
-}
-#projectsdiv {
-  text-align: center;
-  padding-bottom: 20px;
-  min-width: 50%;
-  padding-left: 3%;
-  height: fit-content;
-  display: table;
 }
 #contactdiv {
   text-align: center;
@@ -72,12 +68,14 @@ p {
   font-size:xx-large;
 }
 
-/*#projectsdiv:after {
-  content: "";
-  clear: both;
+#projectsdiv {
+  text-align: center;
+  padding-bottom: 20px;
+  min-width: 50%;
+  padding-left: 3%;
+  height: fit-content;
   display: table;
-}*/
-
+}
 .aframe {
   background: mediumaquamarine;
   height: fit-content;
@@ -96,6 +94,9 @@ p {
   float: left;
   margin: 1%;
 }
+#hamitems { display: none; }
+#hamburger:checked ~ #hamitems { display: block; }
+
 @media all and (max-aspect-ratio: 1) {
 .col-1 {width: 60%;}
 .col-2 {width: 75%;}
@@ -103,6 +104,7 @@ p {
 .col-4 {width: 94%;}
 .col-5 {width: 94%;}
 .col-6 {width: 94%;}
+
 #contactdiv {
   text-align: center;
   padding-top: 3vw;
@@ -113,14 +115,8 @@ p {
   display: table;
   font-size:xx-large;
 }
-#avatar {
-  padding-top: 15px;
-  max-height: 90vw;
-  max-width: 90vw;
-  padding-left: 5vw;
 }
 
-}
 @media all and (min-aspect-ratio: 1) {
 .col-1 {width: 15%;}
 .col-2 {width: 30%;}
@@ -128,23 +124,4 @@ p {
 .col-4 {width: 60%;}
 .col-5 {width: 75%;}
 .col-6 {width: 94%;}
-#contactdiv {
-  text-align: center;
-  padding-top: 3vw;
-  padding-bottom: 20px;
-  width: 60%;
-  padding-left: 20%;
-  height: fit-content;
-  display: table;
-  font-size:xx-large;
 }
-#avatar {
-  padding-top: 15px;
-  max-height: 50vh;
-  max-width: 50vh;
-  padding-left: 10vh;
-}
-}
-
-  #hamitems { display: none; }
-  #hamburger:checked ~ #hamitems { display: block; }

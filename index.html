@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link id="load_light" rel="stylesheet" media="(prefers-color-scheme: light)" href="light.css"/>
-  <link id="load_dark" rel="stylesheet" media="(prefers-color-scheme: dark)" href="dark.css"/>
+  <link id="load_theme" rel="stylesheet" href="style.css"/>
+  <!-- TODO: implement it in more elegant way -->
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
@@ -30,16 +31,16 @@
   </navbar>
   <script>
         document.getElementById("dark").onclick = function () {
-          document.getElementById("load_light").href="dark.css";
+          document.getElementById("load_theme").href="dark.css";
         };
         document.getElementById("light").onclick = function () {
-          document.getElementById("load_dark").href="light.css";
+          document.getElementById("load_theme").href="light.css";
         };
   </script>
   <div class="content">
     <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
       <p>
-      Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. My passion is history and computer science 💻. I like sport ⚽ (mainly watching) , memes, trying new things and learning cool stuff.
+      Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. My passion is programming 💻 and history. I like watching football matches ⚽, scrolling through memes and learning cool stuff in the free time.
       </p>
   </div>
 </div>

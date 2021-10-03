@@ -13,36 +13,36 @@
   <title>Carlod's site</title>
 </head>
 <body>
-<div class="area">
-  <navbar id="hamnav">
-  <label for="hamburger">&#9776;</label>
-  <input type="checkbox" id="hamburger"/>
-  <label style="float:right;" for="theme">
-            <i class="fa fa-moon-o" id="dark" aria-hidden="true"></i>
-            <i class="fa fa-sun-o" id="light" aria-hidden="true"></i>
-          </label>
-          <input type="checkbox" id="theme"/>
-      <div id="hamitems">
-        <a id="firstitem" href="blog">Blog</a>
-        <a href="projects">Projects</a>
-        <a href="contact">Contact Me</a>
-        <a id="lastitem" href="">About Me</a>
-      </div>
-  </navbar>
-  <script>
+  <div class="area">
+    <navbar id="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+    <label style="float:right;" for="theme">
+      <i class="fa fa-moon-o" id="dark" aria-hidden="true"></i>
+      <i class="fa fa-sun-o" id="light" aria-hidden="true"></i>
+    </label>
+    <input type="checkbox" id="theme"/>
+    <div id="hamitems">
+      <a id="firstitem" href="blog">Blog</a>
+      <a href="projects">Projects</a>
+      <a href="contact">Contact Me</a>
+      <a id="lastitem" href="">About Me</a>
+    </div>
+    </navbar>
+    <script>
         document.getElementById("dark").onclick = function () {
           document.getElementById("load_theme").href="dark.css";
         };
         document.getElementById("light").onclick = function () {
           document.getElementById("load_theme").href="light.css";
         };
-  </script>
-  <div class="content">
-    <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
+    </script>
+    <div class="content">
+      <img id="avatar" src="assets/avatar.jpg" alt="My avatar">
       <p>
-      Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. My passion is programming 💻 and history. I like watching football matches ⚽, scrolling through memes and learning cool stuff in the free time.
+        Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. My passion is programming 💻 and history. I like watching football matches ⚽, scrolling through memes and learning cool stuff in the free time.
       </p>
+    </div>
   </div>
-</div>
 </body>
 </html>

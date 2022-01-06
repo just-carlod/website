@@ -1,0 +1,9 @@
+baseURL: https://carlod.net
+languageCode: en_US
+title: Carlod's website
+theme: carlod-dot-net
+languages:
+  en: EN
+  pl: PL
+params:
+  author: Carlod

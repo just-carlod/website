@@ -1,0 +1,8 @@
+{{define "main"}}
+{{ $pages := .Pages }}
+<div class="content">
+{{range $pages}}
+    <p><a href="{{lower .Title}}">{{.Title}}</a> {{.Date.Format "January 2, 2006"}}</p>
+{{end}}
+</div>
+{{end}}

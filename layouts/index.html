@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body>
+        <div class="area">
+          {{ partial "header.html" . }}  
+          <div class="content">
+            {{ $avatar := resources.Get "avatar.jpg" }}
+            <img id="avatar" src="{{ $avatar.Permalink}}" alt="My avatar">
+              <p>
+                Hello, I'm Carlod and I'm 17yo foss and linux enthusiast from Poland. My passion is programming 💻 and history. 
+                I like watching football matches ⚽, scrolling through memes and learning cool stuff in the free time.
+              </p>
+          </div>
+          {{ partial "footer.html" . }}
+        </div>
+    </body>
+</html>

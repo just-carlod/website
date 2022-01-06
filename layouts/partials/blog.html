@@ -1,0 +1,35 @@
+<navbar id="hamnav">
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+      <label style="float:right;" for="theme">
+            <i class="fa fa-moon-o" id="dark" aria-hidden="true"></i>
+            <i class="fa fa-sun-o" id="light" aria-hidden="true"></i>
+      </label>
+      <input type="checkbox" id="theme"/>
+      <div id="hamitems">
+            {{if not (eq .Permalink .Site.BaseURL)}}
+                  <a href="{{.Site.BaseURL}}">Home</a>
+            {{end}}
+            {{if not (eq .Permalink ( "blog/" | absURL ))}}
+                  <a href="{{.Site.BaseURL}}/blog">Blog</a>
+            {{end}}
+            {{if eq .Permalink .Site.BaseURL}}
+                  <a href="{{.Site.BaseURL}}/projects">Projects</a>
+                  <a href="{{.Site.BaseURL}}/contact">Contact Me</a>
+            {{end}}
+            <a id="lastitem" href="{{.Site.BaseURL}}/#about">About Me</a>
+    </div>
+</navbar>
+
+{{ $dark := resources.Get "css/dark.css" | resources.Minify | resources.Fingerprint }}
+{{ $light := resources.Get "css/light.css" | resources.Minify | resources.Fingerprint }}
+
+<script>
+      document.getElementById("dark").onclick = function () {
+                  document.getElementById("load_theme").href="{{$dark.Permalink}}";
+      };
+      
+      document.getElementById("light").onclick = function () {
+                  document.getElementById("load_theme").href="{{$light.Permalink}}";
+      };
+</script>

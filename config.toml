@@ -1,0 +1,8 @@
+baseURL = "https://carlod.net"
+languageCode = "en-us"
+title = "Carlod's website"
+theme = "carlod-dot-net"
+
+[params]
+    author = "Carlod"
+

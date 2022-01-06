@@ -1,0 +1,137 @@
+body {
+background-color: #d2cccf;
+width: 100%;
+min-height: 100%;
+height: fit-content;
+margin: 0;
+padding: 0;
+}
+#avatar {
+  padding-top: 15px;
+  max-width: 90vw;
+  max-height: 90vw;
+  width: 50vh;
+  height: 50vh;
+  padding-left: 5vw;
+}
+.area {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: x-large;
+  color: black;
+  width: 100vw;
+  max-width: 1280px;
+  min-height: 100vh;
+  height: fit-content;
+/*#102f2f;*/
+  margin: auto;
+  margin-top: 0vw;
+  box-shadow: 0px 0px 2px mediumaquamarine;
+  font-family: 'Lato', sans-serif;
+  font-size: x-large;
+}
+a:visited, a:link {
+color: black;
+text-decoration: none;
+}
+#theme, #hamburger, #light {
+  display: none;
+}
+#hamnav label, #hamnav a  {
+    display: inline-block;
+    color: mediumaquamarine;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    padding: 5px;
+    font-size: 0.9em;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+  }
+#firstitem {
+    border-top: 1px solid #ccc;
+}
+p {
+  margin: 0;
+  padding: 8px;
+}
+#hamitems { display: none; }
+#hamburger:checked ~ #hamitems { display: block; }
+#projectsdiv {
+  text-align: center;
+  padding-bottom: 20px;
+  min-width: 50%;
+  padding-left: 3%;
+  height: fit-content;
+  display: table;
+}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 60%;
+  padding-left: 20%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+.aframe {
+  background: mediumaquamarine;
+  height: fit-content;
+  min-height: 37px;
+  border-radius: 10px;
+  padding: 3px;
+}
+.aframe:hover {
+  background: rgba(102,221,170,0.4);
+}
+
+.aframe > h4, h3, p, i, u {
+  padding-left: 10px;
+}
+[class*="col-"] {
+  float: left;
+  margin: 1%;
+}
+@media all and (max-aspect-ratio: 1.1) {
+.col-1 {width: 60%;}
+.col-2 {width: 75%;}
+.col-3 {width: 94%;}
+.col-4 {width: 94%;}
+.col-5 {width: 94%;}
+.col-6 {width: 94%;}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 80%;
+  padding-left: 10%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+}
+
+@media all and (min-aspect-ratio: 1.1) {
+.col-1 {width: 15%;}
+.col-2 {width: 30%;}
+.col-3 {width: 46%;}
+.col-4 {width: 60%;}
+.col-5 {width: 75%;}
+.col-6 {width: 94%;}
+#contactdiv {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 20px;
+  width: 60%;
+  padding-left: 20%;
+  height: fit-content;
+  display: table;
+  font-size:xx-large;
+}
+}

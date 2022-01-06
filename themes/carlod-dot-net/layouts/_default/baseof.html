@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{if eq .Page.Title "404 Page not found"}}
+      {{ $light := resources.Get "css/light.css" | resources.Minify | resources.Fingerprint }}
+      <script>
+      document.getElementById("load_theme").href="{{$light.Permalink}}";
+    </script>
+    {{- block "main" . }}{{- end }}
+    {{else}}
+      <div class="area">
+        {{partial "header.html" .}}  
+        <div class="content">
+          {{- block "main" . }}{{- end }}
+        </div>
+      </div>
+    {{end}}
+  </body>
+</html>
